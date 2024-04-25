@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <sample-element></sample-element>
+    <script type="module">
+      import { LitElement, html } from "lit";
+      import { Signal } from "signal-polyfill";
+      import { SignalWatcher } from "../src";
+
+      let signal = new Signal.State(0);
+
+      setInterval(() => {
+        signal.set(signal.get() + 1);
+      }, 1000);
+
+      class SampleElement extends SignalWatcher(LitElement) {
+        render() {
+          return html`Count: ${signal.get()}`;
+        }
+      }
+
+      customElements.define("sample-element", SampleElement);
+    </script>
+  </body>
+</html>
