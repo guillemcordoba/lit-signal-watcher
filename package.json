@@ -1,7 +1,7 @@
 {
-  "name": "lit-signals",
+  "name": "lit-signal-watcher",
   "version": "0.1.0",
-  "description": "Lit mixins and directives to use signals to read and manage state",
+  "description": "Lit mixin to use signals to read and manage state",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": ["src", "dist"],
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guillemcordoba/lit-signals.git"
+    "url": "git+https://github.com/guillemcordoba/lit-signal-watcher.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/guillemcordoba/lit-signals/issues"
+    "url": "https://github.com/guillemcordoba/lit-signal-watcher/issues"
   },
-  "homepage": "https://github.com/guillemcordoba/lit-signals#readme",
+  "homepage": "https://github.com/guillemcordoba/lit-signal-watcher#readme",
   "dependencies": {
     "lit": "^3.0.0",
     "signal-polyfill": "0.1.0"

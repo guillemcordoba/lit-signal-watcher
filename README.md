@@ -1,23 +1,21 @@
-# lit-signals
+# lit-signal-watcher
 
-Lit mixins and directives to use [signals](https://github.com/tc39/proposal-signals) to read and manage state.
+Lit mixin to use [signals](https://github.com/tc39/proposal-signals) to read and manage state.
 
 ## Installation
 
 ```bash
-npm install lit-signals
+npm install lit-signal-watcher
 ```
 
 ## Usage
 
-### SignalWatcher
-
-The simplest way to integrate signals with Lit is via the `SignalWatcher` mixin:
+Import the `SignalWatcher` mixin and use it to define your base class together with `LitElement`:
 
 ```ts
 import { LitElement, html } from "lit";
 import { Signal } from "signal-polyfill";
-import { SignalWatcher } from "lit-signals";
+import { SignalWatcher } from "lit-signal-watcher";
 
 let signal = new Signal.State(0);
 
