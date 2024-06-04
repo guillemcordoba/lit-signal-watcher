@@ -1,6 +1,6 @@
 {
   "name": "lit-signal-watcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lit mixin to use signals to read and manage state",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/guillemcordoba/lit-signal-watcher#readme",
   "dependencies": {
     "lit": "^3.0.0",
-    "signal-polyfill": "0.1.0"
+    "signal-polyfill": "^0.1.1"
   },
   "devDependencies": {
     "typescript": "^5.4.0",
